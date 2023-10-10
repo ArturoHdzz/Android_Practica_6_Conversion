@@ -56,7 +56,6 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     private void convertir() {
-        // Obtiene el valor ingresado por el usuario
         String valorStr = editText.getText().toString();
 
         if (!valorStr.isEmpty()) {
@@ -83,7 +82,6 @@ public class MainActivity2 extends AppCompatActivity {
             }
 
             if (resultado != null) {
-                // Actualiza el TextView con el resultado
                 TextView resultadoTextView = findViewById(R.id.textResultado);
                 resultadoTextView.setText("Resultado: " + resultado.getValor() + " " + resultado.getUnidad());
             }
