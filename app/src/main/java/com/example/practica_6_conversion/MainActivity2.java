@@ -68,17 +68,17 @@ public class MainActivity2 extends AppCompatActivity {
             Grado resultado = null;
 
             if (opcion.equals("Celsius a Fahrenheit")) {
-                resultado = new Celsius().parse(new Farenheit(valor));
+                resultado = new Farenheit(valor).parse(new Celsius(valor));
             } else if (opcion.equals("Celsius a Kelvin")) {
-                resultado = new Celsius().parse(new Kelvin(valor));
+                resultado = new Kelvin(valor).parse(new Celsius(valor));
             } else if (opcion.equals("Fahrenheit a Celsius")) {
-                resultado = new Farenheit().parse(new Celsius(valor));
+                resultado = new Celsius(valor).parse(new Farenheit(valor));
             } else if (opcion.equals("Fahrenheit a Kelvin")) {
-                resultado = new Farenheit().parse(new Kelvin(valor));
+                resultado = new Kelvin(valor).parse(new Farenheit(valor));
             } else if (opcion.equals("Kelvin a Celsius")) {
-                resultado = new Kelvin().parse(new Celsius(valor));
+                resultado = new Celsius(valor).parse(new Kelvin(valor));
             } else if (opcion.equals("Kelvin a Fahrenheit")) {
-                resultado = new Kelvin().parse(new Farenheit(valor));
+                resultado = new Farenheit(valor).parse(new Kelvin(valor));
             }
 
             if (resultado != null) {
