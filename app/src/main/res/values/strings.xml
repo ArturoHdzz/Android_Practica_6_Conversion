@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Practica_6_Conversion</string>
+
+    <string-array name="conversion_options">
+        <item>Celsius a Fahrenheit</item>
+        <item>Celsius a Kelvin</item>
+        <item>Fahrenheit a Celsius</item>
+        <item>Fahrenheit a Kelvin</item>
+        <item>Kelvin a Celsius</item>
+        <item>Kelvin a Fahrenheit</item>
+    </string-array>
 </resources>
